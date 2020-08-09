@@ -18,7 +18,7 @@ cd ..
 
 export PATH="/opt/gcw0-toolchain/usr/bin/":$PATH
 
-export CC="/opt/usr/bin/mipsel-gcw0-linux-uclibc-gcc"
+export CC="/opt/gcw0-toolchain/usr/bin/mipsel-gcw0-linux-uclibc-gcc"
 
 export CXX="/opt/gcw0-toolchain/usr/bin/mipsel-gcw0-linux-uclibc-g++"
 
