@@ -66,7 +66,9 @@ export LD_LIBRARY_PATH=.
 
 run that script and enjoy halflife at 20-60fps
 
-TODO : work on controls
+TODO : 
 
+- work on controls
+- rebuild once the new cl20 kernel/toolchain are out (gles2 might work with the updated etnaviv driver)
 
 
