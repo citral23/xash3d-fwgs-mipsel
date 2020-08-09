@@ -4,7 +4,7 @@ How to build :
 
 Install the gcw0 toolchain in /opt/
 
-git clone -- recursive https://github.com/citral23/xash3d-fwgs-mipsel.git
+git clone --branch mipsel --recursive https://github.com/citral23/xash3d-fwgs-mipsel.git
 
 cd xash3d-fwgs-mipsel
 
