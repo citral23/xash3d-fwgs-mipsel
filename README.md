@@ -19,6 +19,9 @@ git clone --recursive https://github.com/FWGS/gl4es.git
 edit wscript gl4es part :
 defines = ['NOX11', 'NO_GBM', 'NOEGL', 'DEFAULT_ES=2'],
 
+edit gl4es/src/gl/init.c and gl4es/src/gl/framebuffers.c :
+comment out #include <execinfo.h>
+
 cd ..
 
 --------------------
