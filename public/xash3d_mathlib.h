@@ -18,7 +18,7 @@ GNU General Public License for more details.
 
 #include <math.h>
 #if HAVE_TGMATH_H
-#include <tgmath.h>
+// #include <tgmath.h> doesn't work with the gcw0 toolchain
 #endif
 
 #pragma warning(disable : 4201)	// nonstandard extension used
