@@ -8,24 +8,6 @@ git clone --branch mipsel --recursive https://github.com/citral23/xash3d-fwgs-mi
 
 cd xash3d-fwgs-mipsel
 
---------------------
-
-Optional : 
-
-cd ref_gl 
-
-git clone --recursive https://github.com/FWGS/gl4es.git 
-
-edit wscript gl4es part :
-defines = ['NOX11', 'NO_GBM', 'NOEGL', 'DEFAULT_ES=2'],
-
-edit gl4es/src/gl/init.c and gl4es/src/gl/framebuffers.c :
-comment out #include <execinfo.h>
-
-cd ..
-
---------------------
-
 export PATH="/opt/gcw0-toolchain/usr/bin/":$PATH
 
 export CC="/opt/gcw0-toolchain/usr/bin/mipsel-gcw0-linux-uclibc-gcc"
@@ -39,8 +21,6 @@ export CFLAGS="-fPIC"
 export CXXFLAGS="-fPIC"
 
 ./waf configure -T release --enable-gles1 --enable-stbtt -s /opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/
-
-(or as an alternative, --enable-gl4es which will compile an opengl to gles2 library, looks a bit better in game but seems slower)
 
 ./waf build
 
