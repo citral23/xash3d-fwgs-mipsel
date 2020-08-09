@@ -1,4 +1,4 @@
-Simple edits of the main xash3d-fwgs to be able to run on the RG350M (should also work on the RG350)
+Simple edits of the main xash3d-fwgs to be able to compile for the RG350M (should also work on the RG350)
 
 How to build :
 
