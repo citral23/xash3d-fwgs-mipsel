@@ -46,6 +46,7 @@ cd hlsdk-xash3d
 ./waf build
 
 Collect the generated .so in the build folders and the xash3d binary, copy them all on your RG350M to a folder, and also copy your valve folder in that folder
+
 Edit valve/gameinfo.txt and replace hl.dll with hl.so (You may also have to rename the libref_glxx library you want to use to libref_gl.so for xash3d to find it)
 
 List of files/folder needed :
@@ -54,7 +55,7 @@ hl_mipsel.so
 libmenu.so
 libref_gl.so
 libxash.so
-valve
+valve/
 xash3d
 
 Create a launch script in your xash3d folder :
@@ -65,6 +66,8 @@ export LD_LIBRARY_PATH=.
 ./xash3d
 
 run that script and enjoy halflife at 20-60fps
+
+If something goes wrong, edit the script to run "./xash3d -dev 5"
 
 TODO : 
 
