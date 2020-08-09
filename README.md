@@ -60,10 +60,15 @@ xash3d
 
 Create a launch script in your xash3d folder :
 
+
 #!/bin/sh
+
 export XASH3D_BASEDIR=/your/path/Xash3D
+
 export LD_LIBRARY_PATH=.
+
 ./xash3d
+
 
 run that script and enjoy halflife at 20-60fps
 
