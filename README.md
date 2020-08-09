@@ -30,7 +30,7 @@ export CXXFLAGS="-fPIC"
 
 ./waf configure -T release --enable-gles1 --enable-stbtt -s /opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/
 
-(or as an alternative, --enable-gl4es which will compile an opengl to gles2 driver, looks a bit better in game but seems slower)
+(or as an alternative, --enable-gl4es which will compile an opengl to gles2 library, looks a bit better in game but seems slower)
 
 ./waf build
 
@@ -42,7 +42,16 @@ cd hlsdk-xash3d
 ./waf build
 
 Collect the generated .so in the build folders and the xash3d binary, copy them all on your RG350 to a folder, and also copy your valve folder in that folder
-Edit valve/gameinfo.txt and replace hl.dll with hl.so
+Edit valve/gameinfo.txt and replace hl.dll with hl.so (You may also have to rename the libref_glxx library you want to use to libref_gl.so for xash3d to find it)
+
+List of files/folder needed :
+client_mipsel.so
+hl_mipsel.so
+libmenu.so
+libref_gl.so
+libxash.so
+valve
+xash3d
 
 Create a launch script in your xash3d folder :
 
