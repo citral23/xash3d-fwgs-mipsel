@@ -8,13 +8,16 @@ git clone -- recursive https://github.com/citral23/xash3d-fwgs-mipsel.git
 
 cd xash3d-fwgs-mipsel
 
-cd ref_gl
+--------------------
 
-git clone --recursive https://github.com/FWGS/nanogl.git
+Optional :
+cd ref_gl
 
 git clone --recursive https://github.com/FWGS/gl4es.git
 
 cd ..
+
+--------------------
 
 export PATH="/opt/gcw0-toolchain/usr/bin/":$PATH
 
