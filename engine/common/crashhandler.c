@@ -345,7 +345,7 @@ static void Sys_Crash( int signal, siginfo_t *si, void *context)
 	bp = (void*)ucontext->uc_mcontext.arm_fp;
 	sp = (void*)ucontext->uc_mcontext.arm_sp;
 #else
-	#error "Unknown arch!!!"
+	//#error "Unknown arch!!!" 
 #endif
 
 	// safe actions first, stack and memory may be corrupted
