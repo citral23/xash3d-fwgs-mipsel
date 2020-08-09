@@ -37,7 +37,7 @@ export CXXFLAGS="-fPIC"
 
 cd hlsdk-xash3d
 
-./waf confire -T release
+./waf configure -T release
 
 ./waf build
 
@@ -61,6 +61,8 @@ export LD_LIBRARY_PATH=.
 ./xash3d
 
 run that script and enjoy halflife at 20-60fps
+
+TODO : work on controls
 
 
 
