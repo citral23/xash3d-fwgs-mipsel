@@ -16,6 +16,9 @@ cd ref_gl
 
 git clone --recursive https://github.com/FWGS/gl4es.git 
 
+edit wscript gl4es part :
+defines = ['NOX11', 'NO_GBM', 'NOEGL', 'DEFAULT_ES=2'],
+
 cd ..
 
 --------------------
