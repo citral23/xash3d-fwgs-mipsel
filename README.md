@@ -20,7 +20,7 @@ export PATH="/opt/gcw0-toolchain/usr/bin/":$PATH
 
 export CC="/opt/usr/bin/mipsel-gcw0-linux-uclibc-gcc"
 
-export CXX="/opt/gcw0-toolchain//usr/bin/mipsel-gcw0-linux-uclibc-g++"
+export CXX="/opt/gcw0-toolchain/usr/bin/mipsel-gcw0-linux-uclibc-g++"
 
 export FIND_ROOT_PATH=/opt/gcw0-toolchain/usr/
 
