@@ -10,7 +10,10 @@ cd xash3d-fwgs-mipsel
 
 --------------------
 
-Optional : cd ref_gl git clone --recursive https://github.com/FWGS/gl4es.git cd ..
+Optional : 
+cd ref_gl 
+git clone --recursive https://github.com/FWGS/gl4es.git 
+cd ..
 
 --------------------
 
