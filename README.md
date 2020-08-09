@@ -77,6 +77,7 @@ If something goes wrong, edit the script to run "./xash3d -dev 5"
 TODO : 
 
 - work on controls
+- configure the crash handler ucontext for mips
 - rebuild once the new cl20 kernel/toolchain are out (gles2 might work with the updated etnaviv driver)
 
 
