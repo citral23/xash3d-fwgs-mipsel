@@ -1,4 +1,4 @@
-Simple edits of the main xash3d-fwgs to be able to run on the RG350/RG350M
+Simple edits of the main xash3d-fwgs to be able to run on the RG350M (should also work on the RG350)
 
 How to build :
 
@@ -41,7 +41,7 @@ cd hlsdk-xash3d
 
 ./waf build
 
-Collect the generated .so in the build folders and the xash3d binary, copy them all on your RG350 to a folder, and also copy your valve folder in that folder
+Collect the generated .so in the build folders and the xash3d binary, copy them all on your RG350M to a folder, and also copy your valve folder in that folder
 Edit valve/gameinfo.txt and replace hl.dll with hl.so (You may also have to rename the libref_glxx library you want to use to libref_gl.so for xash3d to find it)
 
 List of files/folder needed :
