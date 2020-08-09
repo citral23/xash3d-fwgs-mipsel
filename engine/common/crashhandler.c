@@ -345,7 +345,7 @@ static void Sys_Crash( int signal, siginfo_t *si, void *context)
 	bp = (void*)ucontext->uc_mcontext.arm_fp;
 	sp = (void*)ucontext->uc_mcontext.arm_sp;
 #elif XASH_MIPS
-	#include <ucontext.h>
+	// TO DO
 #else
 	#error "Unknown arch!!!" 
 #endif
